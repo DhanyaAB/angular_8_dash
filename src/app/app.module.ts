@@ -7,6 +7,8 @@ import { NavbarComponent } from './home/navbar/navbar.component';
 import { MainComponent } from './home/main/main.component';
 import { SidebarComponent } from './home/sidebar/sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
 // import { ToastrModule } from 'ngx-toastr';
 //import { CollapseModule } from 'ngx-bootstrap/collapse';
 @NgModule({
@@ -20,8 +22,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     Ng4LoadingSpinnerModule.forRoot(),
-
+    HttpClientModule,
     BrowserAnimationsModule,
+
     // CollapseModule.forRoot()
   ],
   providers: [],
