@@ -21,22 +21,22 @@
   <nav class="sidebar-menu pt-3 pb-3">
     <div class="menu-header mt-4 mb-4">
       <select class="form-control"  (change)="getValue($event.target.value)">
-        <option *ngFor="let value of trial; let i  = index;" value="{{value[i]}}">{{value[i]}}</option>
+        <option  *ngFor="let value of trial; let i  = index;"  value="{{value[i]}}">{{value[i]}}</option>
       </select>
     </div>
     <div class="menu-header mt-4 mb-4">
-      <select class="form-control"  (change)="getnumber($event.target.value)">
-        <option *ngFor="let value1 of trial1; let i  = index;"selected value="{{value1[i]}}">{{value1[i]}}</option>
+      <select id="sort-item" >
+        <option *ngFor="let value1 of trial1; let i  = index;" selected  value="{{value1[i]}}">{{value1[i]}}</option>
       </select>
     </div>
-    <ng-container *ngFor="let value of  trial2; let i  = index;">
+    <!-- <ng-container *ngFor="let value of  trial2; let i  = index;";"
       <li >
         <a (click)="CallHome1(value[i], i)" style="cursor: pointer;" routerLinkActive="active">
           <i class="fas fa-dot-circle fa-2x" [ngClass]="(value[i]['result']==='failure')?'red':'green'"></i>
           <span [title]="value.image_name">{{value[i]['build_number']}} </span>
         </a>
       </li>
-    </ng-container>
+    </ng-container> -->
 
 
     <div class="view-source mb-3">

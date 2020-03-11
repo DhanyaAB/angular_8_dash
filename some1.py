@@ -70,6 +70,9 @@ def get_log1():
 		dic[j]=i
 		j=j+1
 		l.append(dic)
+		#curr.insert({'views':l})
+        #result=curr.find('views')
+	#print(result)	
 	return jsonify(l)
 
 @app.route("/jobs/<view>", methods=["GET"])
